@@ -16,19 +16,29 @@
             android:layout_alignParentLeft="true" android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true" android:layout_marginEnd="0dp" android:layout_alignParentTop="true"
             android:id="@+id/topbar">
-        <TextView
-                android:layout_marginTop="3dp"
-                android:text="Guantes"
-                android:textSize="26dp"
-                android:layout_width="200dp"
-                android:layout_height="40dp" android:layout_alignTop="@+id/topbar"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Button
+                    android:background="@drawable/baseline_account_circle_black_18dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnPerfil"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/textView5"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintHorizontal_bias="0.926" android:layout_marginTop="4dp"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="Guantes"
+                    android:textSize="26dp"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/textView5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="4dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
-                android:layout_marginLeft="110dp"
-                android:background="@drawable/baseline_account_circle_black_18dp"
-                android:layout_width="40dp"
-                android:layout_height="40dp" android:id="@+id/btnPerfil" android:layout_alignTop="@+id/topbar"
-                android:layout_alignEnd="@+id/topbar"/>
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
