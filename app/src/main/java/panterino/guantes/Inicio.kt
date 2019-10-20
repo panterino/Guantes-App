@@ -5,7 +5,10 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentTransaction
 import kotlinx.android.synthetic.main.activity_inicio.*
 import android.R.attr.fragment
+import android.R.attr.functionalTest
+import android.content.DialogInterface
 import android.text.TextUtils.replace
+import androidx.appcompat.app.AlertDialog
 import androidx.core.view.OneShotPreDrawListener.add
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -21,6 +24,17 @@ class Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
         addFragmentToActivity(getSupportFragmentManager(), inicioF, R.id.contenedor_principal)
+        btnPerfil.setOnClickListener{
+            val dialogBuilder = AlertDialog.Builder(this)
+            dialogBuilder.setMessage("Caracteristica en desarrollo")
+                .setCancelable(false)
+                .setPositiveButton("OK",DialogInterface.OnClickListener {
+                        dialog, id -> this.finish()
+                })
+            val alert = dialogBuilder.create()
+            alert.setTitle("Información")
+            alert.show()
+        }
         nav_principal.setOnNavigationItemSelectedListener { item ->
 
             when (item.itemId) {
@@ -35,6 +49,7 @@ class Inicio : AppCompatActivity() {
                 }
 
             }
+
             return@setOnNavigationItemSelectedListener true
         }
     }

@@ -6,6 +6,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Inicio">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="0dp" android:layout_alignParentStart="true" android:layout_marginStart="30dp"
+            android:layout_alignParentLeft="true" android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" android:layout_marginEnd="0dp" android:layout_alignParentTop="true"
+            android:id="@+id/topbar">
+        <TextView
+                android:layout_marginTop="3dp"
+                android:text="Guantes"
+                android:textSize="26dp"
+                android:layout_width="200dp"
+                android:layout_height="40dp" android:layout_alignTop="@+id/topbar"/>
+
+        <Button
+                android:layout_marginLeft="110dp"
+                android:background="@drawable/baseline_account_circle_black_18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" android:id="@+id/btnPerfil" android:layout_alignTop="@+id/topbar"
+                android:layout_alignEnd="@+id/topbar"/>
+    </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
@@ -17,9 +41,9 @@
     </com.google.android.material.bottomnavigation.BottomNavigationView>
     <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="672dp"
-            android:layout_above="@id/contenedor_principal"
-            android:id="@+id/contenedor_principal">
+            android:layout_above="@+id/nav_principal"
+            android:id="@+id/contenedor_principal" android:layout_marginBottom="1dp"
+            android:layout_marginTop="8dp" android:layout_height="616dp" android:layout_below="@+id/topbar">
     </FrameLayout>
 
 </RelativeLayout>

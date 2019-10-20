@@ -6,19 +6,274 @@
              tools:context=".InicioFragmento">
 
     <!-- TODO: Update blank fragment layout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <TextView
-                android:text="Bienvenido"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2" android:textSize="18sp"
-                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp" android:layout_marginTop="40dp"
-                app:layout_constraintHorizontal_bias="0.498"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="950dp" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+            <LinearLayout
+                    android:layout_margin="0dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="40dp">
+
+                <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="155dp">
+                    <LinearLayout
+                            android:background="@drawable/bg1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <LinearLayout
+                                android:layout_width="220dp"
+                                android:orientation="vertical"
+                                android:layout_margin="20dp"
+                                android:layout_height="match_parent">
+
+                            <TextView
+                                    android:text="Título del articulo"
+                                    android:textSize="22dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="210dp"
+                                    android:layout_height="40dp"/>
+                            <TextView
+                                    android:text="Una pequeña descripción e imagen del articulo para llamar la atención de los niños"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="200dp"
+                                    android:layout_height="75dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp">
+                            <ImageView
+                                    android:src="@mipmap/ic_launcher_round"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="155dp">
+                    <LinearLayout
+                            android:background="@drawable/bg1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <LinearLayout
+                                android:layout_width="220dp"
+                                android:orientation="vertical"
+                                android:layout_margin="20dp"
+                                android:layout_height="match_parent">
+
+                            <TextView
+                                    android:text="Título del articulo"
+                                    android:textSize="22dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="210dp"
+                                    android:layout_height="40dp"/>
+                            <TextView
+                                    android:text="Una pequeña descripción e imagen del articulo para llamar la atención de los niños"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="200dp"
+                                    android:layout_height="75dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp">
+                            <ImageView
+                                    android:src="@mipmap/ic_launcher_round"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="155dp">
+                    <LinearLayout
+                            android:background="@drawable/bg2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <LinearLayout
+                                android:layout_width="220dp"
+                                android:orientation="vertical"
+                                android:layout_margin="20dp"
+                                android:layout_height="match_parent">
+
+                            <TextView
+                                    android:text="Título del articulo"
+                                    android:textSize="22dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="210dp"
+                                    android:layout_height="40dp"/>
+                            <TextView
+                                    android:text="Una pequeña descripción e imagen del articulo para llamar la atención de los niños"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="200dp"
+                                    android:layout_height="75dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp">
+                            <ImageView
+                                    android:src="@mipmap/ic_launcher_round"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="155dp">
+                    <LinearLayout
+                            android:background="@drawable/bg2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <LinearLayout
+                                android:layout_width="220dp"
+                                android:orientation="vertical"
+                                android:layout_margin="20dp"
+                                android:layout_height="match_parent">
+
+                            <TextView
+                                    android:text="Título del articulo"
+                                    android:textSize="22dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="210dp"
+                                    android:layout_height="40dp"/>
+                            <TextView
+                                    android:text="Una pequeña descripción e imagen del articulo para llamar la atención de los niños"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="200dp"
+                                    android:layout_height="75dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp">
+                            <ImageView
+                                    android:src="@mipmap/ic_launcher_round"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="155dp">
+                    <LinearLayout
+                            android:background="@drawable/bg3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <LinearLayout
+                                android:layout_width="220dp"
+                                android:orientation="vertical"
+                                android:layout_margin="20dp"
+                                android:layout_height="match_parent">
+
+                            <TextView
+                                    android:text="Título del articulo"
+                                    android:textSize="22dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="210dp"
+                                    android:layout_height="40dp"/>
+                            <TextView
+                                    android:text="Una pequeña descripción e imagen del articulo para llamar la atención de los niños"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="200dp"
+                                    android:layout_height="75dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp">
+                            <ImageView
+                                    android:src="@mipmap/ic_launcher_round"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="155dp">
+                    <LinearLayout
+                            android:background="@drawable/bg3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <LinearLayout
+                                android:layout_width="220dp"
+                                android:orientation="vertical"
+                                android:layout_margin="20dp"
+                                android:layout_height="match_parent">
+
+                            <TextView
+                                    android:text="Título del articulo"
+                                    android:textSize="22dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="210dp"
+                                    android:layout_height="40dp"/>
+                            <TextView
+                                    android:text="Una pequeña descripción e imagen del articulo para llamar la atención de los niños"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/colorTextCard"
+                                    android:layout_width="200dp"
+                                    android:layout_height="75dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp">
+                            <ImageView
+                                    android:src="@mipmap/ic_launcher_round"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
 </FrameLayout>
